@@ -5,6 +5,7 @@ import android.app.Activity;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.Nullable;
@@ -22,9 +23,8 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.compsociedade.ActivityPrincipal;
 import com.example.compsociedade.R;
-import com.example.compsociedade.ui.login.LoginViewModel;
-import com.example.compsociedade.ui.login.LoginViewModelFactory;
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -112,11 +112,14 @@ public class LoginActivity extends AppCompatActivity {
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                loadingProgressBar.setVisibility(View.VISIBLE);
-                loginViewModel.login(usernameEditText.getText().toString(),
-                        passwordEditText.getText().toString());
+                proxTela(v);
             }
         });
+    }
+
+    public void proxTela(View view){
+        Intent intent = new Intent(this, ActivityPrincipal.class);
+        startActivity(intent);
     }
 
     private void updateUiWithUser(LoggedInUserView model) {
