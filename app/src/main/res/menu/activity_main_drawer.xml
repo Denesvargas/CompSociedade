@@ -6,32 +6,24 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_home"
-            android:icon="@drawable/ic_menu_camera"
-            android:title="@string/menu_home" />
+            android:icon="@android:drawable/btn_default_small"
+            android:title="Início" />
         <item
-            android:id="@+id/nav_gallery"
-            android:icon="@drawable/ic_menu_gallery"
-            android:title="@string/menu_gallery" />
+            android:id="@+id/nav_doar"
+            android:icon="@android:drawable/ic_input_add"
+            android:title="Nova Doação" />
         <item
-            android:id="@+id/nav_slideshow"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="@string/menu_slideshow" />
-        <item
-            android:id="@+id/nav_tools"
-            android:icon="@drawable/ic_menu_manage"
-            android:title="@string/menu_tools" />
+            android:id="@+id/nav_pesquisar"
+            android:icon="@android:drawable/ic_menu_search"
+            android:title="Pesquisar" />
     </group>
 
-    <item android:title="Communicate">
+    <item android:title="Suporte">
         <menu>
             <item
-                android:id="@+id/nav_share"
-                android:icon="@drawable/ic_menu_share"
-                android:title="@string/menu_share" />
-            <item
-                android:id="@+id/nav_send"
-                android:icon="@drawable/ic_menu_send"
-                android:title="@string/menu_send" />
+                android:id="@+id/nav_ajuda"
+                android:icon="@android:drawable/ic_menu_help"
+                android:title="Ajuda" />
         </menu>
     </item>
 
