@@ -1,0 +1,21 @@
+package com.example.s_clothes;
+
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+public class ActivityPreCadastro extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_pre_cadastro);
+    }
+
+    public void abreCadastro(View view){
+        Intent intent = new Intent(this, ActivityCadastro.class);
+        startActivity(intent);
+    }
+}
