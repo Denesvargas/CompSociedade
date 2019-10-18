@@ -22,4 +22,14 @@ public class ActivityLogin extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void openHome(View view){
+        /*
+         * Fazer a autenticação aqui, se falhar retorna um erro
+         * Se achou o usuario na tebela doador abre a tela de doador
+         * Se achou na tabela donatario abre a tela Home_donatario
+         */
+        Intent intent = new Intent(this, HomeDoador.class);
+        startActivity(intent);
+    }
+
 }

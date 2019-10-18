@@ -9,4 +9,16 @@
     <string name="invalid_username">Not a valid username</string>
     <string name="invalid_password">Password must be >5 characters</string>
     <string name="login_failed">"Login failed"</string>
+    <string name="Usuario_email">denes@inf.ufsm.br</string>
+    <string name="Usuario">Dênes</string>
+    <string name="inicial">Início</string>
+    <string name="nova_doacao">Nova Doação</string>
+    <string name="menu_share">Compartilhar</string>
+    <string name="menu_exit">Deslogar</string>
+    <string name="search_title" />
+    <string name="home_doador">Solicitações de doações</string>
+    <string name="login_button">ENTRAR</string>
+    <string name="cadastro_button">CADASTRE-SE</string>
+    <string name="hint_user_label">Usuário</string>
+    <string name="hint_password_label">Senha</string>
 </resources>

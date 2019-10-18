@@ -22,7 +22,7 @@
         <ImageView
             android:id="@+id/imageView2"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="0dp"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="30dp"
             android:layout_weight="1"
@@ -37,7 +37,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
             android:ems="10"
-            android:hint="Usuário"
+            android:hint="@string/hint_user_label"
             android:inputType="textPersonName"
             android:textSize="24sp" />
 
@@ -46,7 +46,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:hint="Senha"
+            android:hint="@string/hint_password_label"
             android:inputType="textPassword"
             android:textSize="24sp" />
 
@@ -58,7 +58,8 @@
             android:layout_marginTop="30dp"
             android:layout_marginRight="20dp"
             android:background="@android:color/holo_blue_dark"
-            android:text="ENTRAR"
+            android:onClick="openHome"
+            android:text="@string/login_button"
             android:textColor="@android:color/background_light" />
 
         <Button
@@ -71,7 +72,7 @@
             android:layout_marginBottom="100dp"
             android:background="@android:color/holo_blue_dark"
             android:onClick="abrePreCadastro"
-            android:text="CADASTRE-SE"
+            android:text="@string/cadastro_button"
             android:textColor="@android:color/background_light" />
 
     </LinearLayout>
