@@ -9,6 +9,6 @@
         android:id="@+id/nav_home"
         android:name="com.example.s_clothes.HomeDoador"
         android:label="@string/inicial"
-        tools:layout="@layout/home_doador" />
+        tools:layout="@layout/app_bar_doador" />
 
 </navigation>

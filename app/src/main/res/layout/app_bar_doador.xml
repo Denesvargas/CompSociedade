@@ -8,10 +8,16 @@
     android:focusable="true"
     tools:context=".HomeDoador">
 
+    <fragment
+        android:id="@+id/nav_host_fragment"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/appBarLayout"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="668dp"
         android:background="#00FFFFFF"
         android:theme="@style/AppTheme.AppBarOverlay">
 
@@ -36,6 +42,17 @@
 
     </SearchView>
 
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="16dp"
+        android:layout_marginBottom="16dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="@drawable/ic_add_white_24dp" />
+
     <TextView
         android:id="@+id/textView2"
         style="@style/Widget.AppCompat.TextView.SpinnerItem"
@@ -49,23 +66,5 @@
         android:text="@string/home_doador"
         android:textAlignment="center"
         android:textSize="24sp" />
-
-    <fragment
-        android:id="@+id/nav_host_fragment"
-        android:name="androidx.navigation.fragment.NavHostFragment"
-        android:layout_width="0dp"
-        android:layout_height="0dp" />
-
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/fab"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
-        android:layout_margin="16dp"
-        android:layout_marginBottom="16dp"
-        android:clickable="true"
-        android:focusable="true"
-        android:foreground="@drawable/ic_add_white_24dp" />
-
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
