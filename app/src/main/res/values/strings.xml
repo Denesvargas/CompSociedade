@@ -21,4 +21,13 @@
     <string name="cadastro_button">CADASTRE-SE</string>
     <string name="hint_user_label">Usuário</string>
     <string name="hint_password_label">Senha</string>
+    <!-- Strings related to help screen -->
+    <string name="help_title">Perguntas Frequentes</string>
+    <string name="help_search">Buscar</string>
+    <string name="help_q1">O que posso doar?</string>
+    <string name="help_a1">Roupas em geral: camisas, casacos, jaquetas, bermudas, calças, sapatos e acessórios são bem-vindos para ajudar quem precisa.</string>
+    <string name="help_q2">Quem receberá as doações?</string>
+    <string name="help_a2">Pessoas necessitadas, portando seu Número de Identificação Social (NIS), poderão obter as roupas disponibilizadas para doação, além de entidades beneficientes cadastradas que ficarão responsáveis também de encaminhar essas roupas a quem deseja e não possui acesso ao aplicativo.</string>
+    <string name="help_q3">Como é feita a entrega das roupas?</string>
+    <string name="help_a3">Doador e donatário podem marcar um local para o encontro, ou o doador pode deixar os itens em uma de nossas entidades cadastradas, onde o donatário pode fazer a retirada.</string>
 </resources>

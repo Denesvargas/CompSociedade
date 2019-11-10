@@ -54,7 +54,7 @@
         android:foreground="@drawable/ic_add_white_24dp" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/textView_Title"
         style="@style/Widget.AppCompat.TextView.SpinnerItem"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

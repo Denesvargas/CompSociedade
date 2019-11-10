@@ -1,6 +1,5 @@
 package com.example.s_clothes;
 
-
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -21,7 +20,6 @@ import androidx.navigation.ui.NavigationUI;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.navigation.NavigationView;
 import com.google.android.material.snackbar.Snackbar;
-
 
 public class HomeDoador extends AppCompatActivity {
 
