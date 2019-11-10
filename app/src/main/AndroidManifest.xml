@@ -9,6 +9,8 @@
         android:roundIcon="@mipmap/logo"
         android:supportsRtl="true"
         android:theme="@style/AppTheme.NoActionBar">
+        <activity android:name=".ActivityDonate"></activity>
+        <activity android:name=".ActivityHelp" />
         <activity android:name=".ActivityLogin">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -16,12 +18,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ActivityPreCadastro">
-        </activity>
-        <activity android:name=".ActivityCadastro">
-        </activity>
-        <activity android:name=".HomeDoador" >
-        </activity>
+        <activity android:name=".ActivityPreCadastro" />
+        <activity android:name=".ActivityCadastro" />
+        <activity android:name=".HomeDoador" />
     </application>
 
 </manifest>
