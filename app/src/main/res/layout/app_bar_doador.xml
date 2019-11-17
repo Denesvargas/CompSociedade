@@ -51,10 +51,11 @@
         android:layout_marginBottom="16dp"
         android:clickable="true"
         android:focusable="true"
-        android:foreground="@drawable/ic_add_white_24dp" />
+        android:foreground="@drawable/ic_add_white_24dp"
+        android:onClick="onClick" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/textView_Title"
         style="@style/Widget.AppCompat.TextView.SpinnerItem"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

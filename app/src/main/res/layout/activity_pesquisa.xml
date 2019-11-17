@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:clickable="true"
     android:focusable="true"
-    tools:context=".ActivityDonate">
+    tools:context=".ActivityPesquisa">
 
     <fragment
         android:id="@+id/nav_host_fragment"
@@ -37,7 +37,7 @@
             android:background="#403F3F3F"
             android:fontFamily="sans-serif"
             android:padding="8dp"
-            android:text="@string/donate_title"
+            android:text="@string/search_title"
             android:textAlignment="center"
             android:textColor="#000000"
             android:textSize="24sp" />
@@ -52,33 +52,44 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
-                <ImageView
-                    android:id="@+id/imageView7"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="30dp"
-                    app:srcCompat="@drawable/donate_upload" />
 
-                <Button
-                    android:id="@+id/button"
+                <TextView
+                    android:id="@+id/textView_A1"
+                    style="@style/Widget.AppCompat.TextView.SpinnerItem"
                     android:layout_width="match_parent"
-                    android:layout_height="40dp"
-                    android:layout_marginLeft="150dp"
-                    android:layout_marginTop="-70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|top|center_vertical"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
                     android:layout_marginRight="20dp"
-                    android:layout_marginBottom="10dp"
-                    android:background="?attr/colorPrimary"
-                    android:text="@string/donate_imagebutton"
-                    android:textColor="@android:color/background_light" />
+                    android:color="#000000"
+                    android:fontFamily="sans-serif"
+                    android:padding="8dp"
+                    android:text="@string/search_text"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
 
+                <EditText
+                    android:id="@+id/editText12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    android:ems="10"
+                    android:hint="@string/help_search"
+                    android:inputType="textPersonName"
+                    android:textColor="#000000"
+                    android:textColorHint="#646464" />
 
                 <Spinner
                     android:id="@+id/spinCategoria"
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
-                    android:layout_marginLeft="30dp"
-                    android:layout_marginTop="30dp"
-                    android:layout_marginRight="30dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
                     android:ems="10"
                     android:entries="@array/categoria"
                     android:textColor="#000000"
@@ -88,9 +99,9 @@
                     android:id="@+id/spinEstilo"
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
-                    android:layout_marginLeft="30dp"
+                    android:layout_marginLeft="20dp"
                     android:layout_marginTop="10dp"
-                    android:layout_marginRight="30dp"
+                    android:layout_marginRight="20dp"
                     android:ems="10"
                     android:entries="@array/estilo"
                     android:textColor="#000000"
@@ -100,9 +111,9 @@
                     android:id="@+id/spinCor"
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
-                    android:layout_marginLeft="30dp"
+                    android:layout_marginLeft="20dp"
                     android:layout_marginTop="10dp"
-                    android:layout_marginRight="30dp"
+                    android:layout_marginRight="20dp"
                     android:ems="10"
                     android:entries="@array/cor"
                     android:textColor="#000000"
@@ -112,26 +123,11 @@
                     android:id="@+id/spinTamanho"
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
-                    android:layout_marginLeft="30dp"
+                    android:layout_marginLeft="20dp"
                     android:layout_marginTop="10dp"
-                    android:layout_marginRight="30dp"
+                    android:layout_marginRight="20dp"
                     android:ems="10"
                     android:entries="@array/tamanho"
-                    android:textColor="#000000"
-                    android:textColorHint="#646464" />
-
-                <EditText
-                    android:id="@+id/editText15"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="30dp"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginRight="30dp"
-                    android:clickable="true"
-                    android:ems="10"
-                    android:gravity="start|top"
-                    android:hint="@string/donate_option5"
-                    android:inputType="textMultiLine"
                     android:textColor="#000000"
                     android:textColorHint="#646464" />
 
@@ -144,8 +140,8 @@
                     android:layout_marginRight="20dp"
                     android:layout_marginBottom="10dp"
                     android:background="?attr/colorPrimary"
-                    android:onClick="abreItem"
-                    android:text="@string/donate_save"
+                    android:onClick="abreResultados"
+                    android:text="@string/search_button"
                     android:textColor="@android:color/background_light" />
 
             </LinearLayout>

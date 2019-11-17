@@ -15,7 +15,7 @@
     <string name="nova_doacao">Nova Doação</string>
     <string name="menu_share">Compartilhar</string>
     <string name="menu_exit">Deslogar</string>
-    <string name="search_title" />
+    <!-- <string name="search_title" /> -->
     <string name="home_doador">Solicitações de doações</string>
     <string name="login_button">ENTRAR</string>
     <string name="cadastro_button">CADASTRE-SE</string>
@@ -32,11 +32,65 @@
     <string name="help_a3">Doador e donatário podem marcar um local para o encontro, ou o doador pode deixar os itens em uma de nossas entidades cadastradas, onde o donatário pode fazer a retirada.</string>
     <!-- Strings related to donate screen -->
     <string name="donate_title">Nova Doação</string>
-    <string name="donate_imagebutton">Enviar nova foto</string>
+    <string name="donate_imagebutton">Carregar foto</string>
     <string name="donate_option1">Categoria</string>
     <string name="donate_option2">Estilo</string>
     <string name="donate_option3">Cor</string>
     <string name="donate_option4">Tamanho</string>
     <string name="donate_option5">Descrição</string>
-    <string name="donate_save">Confirmar</string>
+    <string name="donate_save">Salvar</string>
+    <!-- Strings related to search screen -->
+    <string name="search_title">Pesquisa Detalhada</string>
+    <string name="search_text">Filtros de busca</string>
+    <string name="search_option1">Categoria</string>
+    <string name="search_option2">Estilo</string>
+    <string name="search_option3">Cor</string>
+    <string name="search_option4">Tamanho</string>
+    <string name="search_button">Pesquisar</string>
+    <!-- Strings related to chat screen -->
+    <string name="chat_title">Chat com Andre Berwaldt</string>
+    <string name="chat_type">Digite a mensagem...</string>
+    <string name="chat_message7">Oláaa</string>
+    <string name="chat_message6">ME RESPONDEEEE</string>
+    <string name="chat_message5">Boa tarde</string>
+    <string name="chat_message4">Eu vi q você tá doando um casaco</string>
+    <string name="chat_message3">Eu só uso roupas cinzas</string>
+    <string name="chat_message2">Sim</string>
+    <string name="chat_message1">Eu usei ele muito pouco</string>
+    <string name="chat_button">Enviar</string>
+    <!-- Strings related to result screen -->
+    <string name="result_title">Resultados</string>
+
+    <string-array name="categoria">
+        <item>Categoria</item>
+        <item>Camiseta</item>
+        <item>Casaco</item>
+        <item>Calça</item>
+        <item>Meias</item>
+        <item>Sapatos</item>
+    </string-array>
+
+    <string-array name="tamanho">
+        <item>Tamanho</item>
+        <item>P</item>
+        <item>M</item>
+        <item>G</item>
+        <item>GG</item>
+    </string-array>
+
+    <string-array name="estilo">
+        <item>Genero</item>
+        <item>Masculino</item>
+        <item>Feminino</item>
+        <item>Unissex</item>
+    </string-array>
+
+    <string-array name="cor">
+        <item>Cor</item>
+        <item>Branco</item>
+        <item>Preto</item>
+        <item>Vermelho</item>
+        <item>Azul</item>
+        <item>Verde</item>
+    </string-array>
 </resources>

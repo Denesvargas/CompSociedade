@@ -2,12 +2,11 @@
 <androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/nav_help"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:clickable="true"
     android:focusable="true"
-    tools:context=".ActivityHelp">
+    tools:context=".ActivityChat">
 
     <fragment
         android:id="@+id/nav_host_fragment"
@@ -30,32 +29,18 @@
             app:popupTheme="@style/AppTheme.PopupOverlay" />
 
         <TextView
-            android:id="@+id/textView_Title"
+            android:id="@+id/textView2"
             style="@style/Widget.AppCompat.TextView.SpinnerItem"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal|top|center_vertical"
             android:background="#403F3F3F"
-            android:color="#000000"
             android:fontFamily="sans-serif"
             android:padding="8dp"
-            android:text="@string/help_title"
+            android:text="@string/chat_title"
             android:textAlignment="center"
             android:textColor="#000000"
             android:textSize="24sp" />
-
-        <EditText
-            android:id="@+id/editText11"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginRight="20dp"
-            android:ems="10"
-            android:hint="@string/help_search"
-            android:inputType="textPersonName"
-            android:textColor="#000000"
-            android:textColorHint="#646464" />
 
         <ScrollView
             android:layout_width="match_parent"
@@ -67,114 +52,157 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
-                <TextView
-                    android:id="@+id/textView_Q1"
-                    style="@style/Widget.AppCompat.TextView.SpinnerItem"
+
+                <EditText
+                    android:id="@+id/editText12"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal|top|center_vertical"
                     android:layout_marginLeft="20dp"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginTop="20dp"
                     android:layout_marginRight="20dp"
-                    android:background="@color/colorPrimary"
-                    android:color="#FFFFFF"
-                    android:fontFamily="sans-serif"
-                    android:padding="8dp"
-                    android:text="@string/help_q1"
-                    android:textAlignment="center"
-                    android:textColor="#FFFFFF"
-                    android:textSize="22sp" />
+                    android:ems="10"
+                    android:hint="@string/chat_type"
+                    android:inputType="textPersonName"
+                    android:textColor="#000000"
+                    android:textColorHint="#646464" />
+
+                <Button
+                    android:id="@+id/button4"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="?attr/colorPrimary"
+                    android:text="@string/chat_button"
+                    android:textColor="@android:color/background_light" />
 
                 <TextView
                     android:id="@+id/textView_A1"
                     style="@style/Widget.AppCompat.TextView.SpinnerItem"
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal|top|center_vertical"
+                    android:layout_gravity="right|top|center_vertical"
                     android:layout_marginLeft="20dp"
                     android:layout_marginTop="10dp"
                     android:layout_marginRight="20dp"
+                    android:background="#A6A6A6"
                     android:color="#000000"
                     android:fontFamily="sans-serif"
                     android:padding="8dp"
-                    android:text="@string/help_a1"
+                    android:text="@string/chat_message1"
                     android:textAlignment="center"
                     android:textColor="#000000"
                     android:textSize="18sp" />
-
-                <TextView
-                    android:id="@+id/textView_Q2"
-                    style="@style/Widget.AppCompat.TextView.SpinnerItem"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal|top|center_vertical"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginTop="25dp"
-                    android:layout_marginRight="20dp"
-                    android:background="?attr/colorPrimary"
-                    android:color="#FFFFFF"
-                    android:fontFamily="sans-serif"
-                    android:padding="8dp"
-                    android:text="@string/help_q2"
-                    android:textAlignment="center"
-                    android:textColor="#FFFFFF"
-                    android:textSize="22sp" />
 
                 <TextView
                     android:id="@+id/textView_A2"
                     style="@style/Widget.AppCompat.TextView.SpinnerItem"
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal|top|center_vertical"
+                    android:layout_gravity="right|top|center_vertical"
                     android:layout_marginLeft="20dp"
                     android:layout_marginTop="10dp"
                     android:layout_marginRight="20dp"
+                    android:background="#A6A6A6"
                     android:color="#000000"
                     android:fontFamily="sans-serif"
                     android:padding="8dp"
-                    android:text="@string/help_a2"
+                    android:text="@string/chat_message2"
                     android:textAlignment="center"
                     android:textColor="#000000"
                     android:textSize="18sp" />
-
-                <TextView
-                    android:id="@+id/textView_Q3"
-                    style="@style/Widget.AppCompat.TextView.SpinnerItem"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal|top|center_vertical"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginTop="25dp"
-                    android:layout_marginRight="20dp"
-                    android:background="?attr/colorPrimary"
-                    android:color="#FFFFFF"
-                    android:fontFamily="sans-serif"
-                    android:padding="8dp"
-                    android:text="@string/help_q3"
-                    android:textAlignment="center"
-                    android:textColor="#FFFFFF"
-                    android:textSize="22sp" />
 
                 <TextView
                     android:id="@+id/textView_A3"
                     style="@style/Widget.AppCompat.TextView.SpinnerItem"
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal|top|center_vertical"
+                    android:layout_gravity="top|left|center_vertical"
                     android:layout_marginLeft="20dp"
                     android:layout_marginTop="10dp"
                     android:layout_marginRight="20dp"
+                    android:background="#D8D8D8"
                     android:color="#000000"
                     android:fontFamily="sans-serif"
                     android:padding="8dp"
-                    android:text="@string/help_a3"
+                    android:text="@string/chat_message3"
                     android:textAlignment="center"
                     android:textColor="#000000"
                     android:textSize="18sp" />
 
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="50dp" />
+                <TextView
+                    android:id="@+id/textView_A4"
+                    style="@style/Widget.AppCompat.TextView.SpinnerItem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|left|center_vertical"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:background="#D8D8D8"
+                    android:color="#000000"
+                    android:fontFamily="sans-serif"
+                    android:padding="8dp"
+                    android:text="@string/chat_message4"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/textView_A5"
+                    style="@style/Widget.AppCompat.TextView.SpinnerItem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|top|center_vertical"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:background="#A6A6A6"
+                    android:color="#000000"
+                    android:fontFamily="sans-serif"
+                    android:padding="8dp"
+                    android:text="@string/chat_message5"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/textView_A7"
+                    style="@style/Widget.AppCompat.TextView.SpinnerItem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|left|center_vertical"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:background="#D8D8D8"
+                    android:color="#000000"
+                    android:fontFamily="sans-serif"
+                    android:padding="8dp"
+                    android:text="@string/chat_message6"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/textView_A8"
+                    style="@style/Widget.AppCompat.TextView.SpinnerItem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|left|center_vertical"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:background="#D8D8D8"
+                    android:color="#000000"
+                    android:fontFamily="sans-serif"
+                    android:padding="8dp"
+                    android:text="@string/chat_message7"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
 
             </LinearLayout>
         </ScrollView>
@@ -189,19 +217,8 @@
         android:layout_margin="4dp"
         android:background="@color/colorPrimary"
         android:inputType="text"
-        android:layoutDirection="rtl">
+        android:layoutDirection="rtl" >
 
     </SearchView>
-
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/fab"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
-        android:layout_margin="16dp"
-        android:layout_marginBottom="16dp"
-        android:clickable="true"
-        android:focusable="true"
-        android:foreground="@drawable/ic_add_white_24dp" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

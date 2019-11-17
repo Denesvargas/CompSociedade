@@ -9,7 +9,11 @@
         android:roundIcon="@mipmap/logo"
         android:supportsRtl="true"
         android:theme="@style/AppTheme.NoActionBar">
-        <activity android:name=".ActivityDonate"></activity>
+        <activity android:name=".ActivityItem"></activity>
+        <activity android:name=".ActivityResultados" />
+        <activity android:name=".ActivityChat" />
+        <activity android:name=".ActivityPesquisa" />
+        <activity android:name=".ActivityDonate" />
         <activity android:name=".ActivityHelp" />
         <activity android:name=".ActivityLogin">
             <intent-filter>
