@@ -1,5 +1,6 @@
 package com.example.s_clothes;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -75,11 +76,16 @@ public class HomeDoador extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-        switch(item.getItemId()){
+        switch (item.getItemId()) {
             case android.R.id.home:
                 drawer.openDrawer(GravityCompat.START);
                 return true;
         }
         return super.onOptionsItemSelected(item);
+    }
+
+    public void onClick(View view) {
+        Intent intent = new Intent(this, ActivityDonate.class);
+        startActivity(intent);
     }
 }

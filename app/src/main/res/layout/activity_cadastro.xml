@@ -117,8 +117,8 @@
             android:layout_marginRight="20dp"
             android:layout_marginBottom="100dp"
             android:background="@android:color/holo_blue_dark"
-            android:text="CADASTRAR"
             android:textColor="@android:color/background_light"
+            android:text="CADASTRAR"
             android:textSize="18sp" />
 
     </LinearLayout>

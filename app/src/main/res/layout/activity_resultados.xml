@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_help"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:focusable="true"
+    tools:context=".ActivityResultados">
+
+    <fragment
+        android:id="@+id/nav_host_fragment"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorGrey"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+        <TextView
+            android:id="@+id/textView_Title"
+            style="@style/Widget.AppCompat.TextView.SpinnerItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|top|center_vertical"
+            android:background="#403F3F3F"
+            android:color="#000000"
+            android:fontFamily="sans-serif"
+            android:padding="8dp"
+            android:text="Resultados"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/editText11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:ems="10"
+            android:hint="@string/help_search"
+            android:inputType="textPersonName"
+            android:textColor="#000000"
+            android:textColorHint="#646464"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/textView_A"
+            style="@style/Widget.AppCompat.TextView.SpinnerItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|top|center_vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="20dp"
+            android:clickable="true"
+            android:color="#000000"
+            android:fontFamily="sans-serif"
+            android:onClick="abrePesquisaDetalhada"
+            android:text="Busca detalhada"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            style="@style/Widget.AppCompat.TextView.SpinnerItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|top|center_vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:color="#000000"
+            android:fontFamily="sans-serif"
+            android:padding="8dp"
+            android:text="13 resultados encontrados na sua região."
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="14sp" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:adjustViewBounds="true"
+                    android:maxWidth="170dp"
+                    android:maxHeight="170dp"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/photo1" />
+
+                <TextView
+                    android:id="@+id/textView_A4"
+                    style="@style/Widget.AppCompat.TextView.SpinnerItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_horizontal|top|center_vertical"
+                    android:layout_marginLeft="200dp"
+                    android:layout_marginTop="-170dp"
+                    android:layout_marginRight="20dp"
+                    android:color="#000000"
+                    android:fontFamily="sans-serif"
+                    android:padding="8dp"
+                    android:text="Casaco Cinza\nTamanho G"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView_A5"
+                    style="@style/Widget.AppCompat.TextView.SpinnerItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_horizontal|top|center_vertical"
+                    android:layout_marginLeft="200dp"
+                    android:layout_marginRight="20dp"
+                    android:color="#000000"
+                    android:fontFamily="sans-serif"
+                    android:padding="8dp"
+                    android:text="Casaco cinza hollister, unissex e..."
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/button4"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_gravity="right"
+                    android:layout_marginLeft="200dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:background="?attr/colorPrimary"
+                    android:onClick="abreItem"
+                    android:text="Ver mais"
+                    android:textColor="@android:color/background_light" />
+
+                <ImageView
+                    android:id="@+id/imageView13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:adjustViewBounds="true"
+                    android:maxWidth="170dp"
+                    android:maxHeight="170dp"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/photo3" />
+
+                <TextView
+                    android:id="@+id/textView_A14"
+                    style="@style/Widget.AppCompat.TextView.SpinnerItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_horizontal|top|center_vertical"
+                    android:layout_marginLeft="200dp"
+                    android:layout_marginTop="-170dp"
+                    android:layout_marginRight="20dp"
+                    android:color="#000000"
+                    android:fontFamily="sans-serif"
+                    android:padding="8dp"
+                    android:text="Camiseta Cinza\nTamanho M"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView_A15"
+                    style="@style/Widget.AppCompat.TextView.SpinnerItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_horizontal|top|center_vertical"
+                    android:layout_marginLeft="200dp"
+                    android:layout_marginRight="20dp"
+                    android:color="#000000"
+                    android:fontFamily="sans-serif"
+                    android:padding="8dp"
+                    android:text="Estampa irada. Pouco usada pois eu..."
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/button14"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_gravity="right"
+                    android:layout_marginLeft="200dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:background="?attr/colorPrimary"
+                    android:onClick="abreItem"
+                    android:text="Ver mais"
+                    android:textColor="@android:color/background_light" />
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:adjustViewBounds="true"
+                    android:maxWidth="170dp"
+                    android:maxHeight="170dp"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/photo2" />
+
+                <TextView
+                    android:id="@+id/textView_A2"
+                    style="@style/Widget.AppCompat.TextView.SpinnerItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_horizontal|top|center_vertical"
+                    android:layout_marginLeft="200dp"
+                    android:layout_marginTop="-170dp"
+                    android:layout_marginRight="20dp"
+                    android:color="#000000"
+                    android:fontFamily="sans-serif"
+                    android:padding="8dp"
+                    android:text="Camiseta Salmão\nTamanho M"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView_A6"
+                    style="@style/Widget.AppCompat.TextView.SpinnerItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_horizontal|top|center_vertical"
+                    android:layout_marginLeft="200dp"
+                    android:layout_marginRight="20dp"
+                    android:color="#000000"
+                    android:fontFamily="sans-serif"
+                    android:padding="8dp"
+                    android:text="camiseta gola polo forum, a procura..."
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/button5"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_gravity="right"
+                    android:layout_marginLeft="200dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:background="?attr/colorPrimary"
+                    android:onClick="abreItem"
+                    android:text="Ver mais"
+                    android:textColor="@android:color/background_light" />
+
+            </LinearLayout>
+        </ScrollView>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <SearchView
+        android:id="@+id/searchView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_margin="4dp"
+        android:background="@color/colorPrimary"
+        android:inputType="text"
+        android:layoutDirection="rtl">
+
+    </SearchView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="16dp"
+        android:layout_marginBottom="16dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="@drawable/ic_add_white_24dp" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
