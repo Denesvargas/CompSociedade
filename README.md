@@ -37,6 +37,8 @@ Disciplina de Computadores e Sociedade 2019/02
 - Nomeclatura das branches sugiro usar *NomeDoModuloQueEstaotrabalhando*, por exemplo *tela-de-ajuda*. 
 Evitar nomes pouco explicativos como *ImplementandoOApp*, *piu1*, etc.
 
+- Ao dar commit colocar uma mensagem de commit decente e explicativa para os outros entenderem o que o código adicionado por vocês faz. Não repetir a mensagem de commit, caso esteja refatorando o commit anterior escreva isso na mensagem de commit. Entendeu RAFAEL VALES?
+
 - Quando acabar o desenvolvimento de sua branch dar o [merge](https://git-scm.com/docs/git-merge) na master e resolver os conflitos. 
 Depois abrir outra branch com a proxima tarefa.
 
