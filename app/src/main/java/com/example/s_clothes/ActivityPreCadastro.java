@@ -6,6 +6,8 @@ import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.s_clothes.data.ActivityCadastroDoador;
+
 public class ActivityPreCadastro extends AppCompatActivity {
 
     @Override
@@ -16,6 +18,16 @@ public class ActivityPreCadastro extends AppCompatActivity {
 
     public void abreCadastro(View view){
         Intent intent = new Intent(this, ActivityCadastro.class);
+        startActivity(intent);
+    }
+
+    public void abreCadastroDoador(View view){
+        Intent intent = new Intent(this, ActivityCadastroDoador.class);
+        startActivity(intent);
+    }
+
+    public void abreCadastroAssociacao(View view){
+        Intent intent = new Intent(this, ActivityCadastroAssociacao.class);
         startActivity(intent);
     }
 }

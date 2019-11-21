@@ -22,7 +22,7 @@
         <ImageView
             android:id="@+id/imageView2"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="315dp"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="30dp"
             android:layout_weight="1"
@@ -39,8 +39,22 @@
             android:layout_marginTop="20dp"
             android:layout_marginRight="20dp"
             android:background="@android:color/holo_blue_dark"
-            android:onClick="abreCadastro"
+            android:onClick="abreCadastroDoador"
             android:text="SOU DOADOR"
+            android:textColor="@android:color/background_light"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/button7"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:background="@android:color/holo_blue_dark"
+            android:onClick="abreCadastro"
+            android:text="SOU DONATÁRIO"
             android:textColor="@android:color/background_light"
             android:textSize="20sp" />
 
@@ -53,8 +67,8 @@
             android:layout_marginRight="20dp"
             android:layout_marginBottom="100dp"
             android:background="@android:color/holo_blue_dark"
-            android:onClick="abreCadastro"
-            android:text="SOU DONATÁRIO"
+            android:onClick="abreCadastroAssociacao"
+            android:text="SOU ASSOCIAÇÃO/ONG"
             android:textColor="@android:color/background_light"
             android:textSize="20sp" />
 
