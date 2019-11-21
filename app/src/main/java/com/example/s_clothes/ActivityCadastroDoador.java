@@ -1,4 +1,4 @@
-package com.example.s_clothes.data;
+package com.example.s_clothes;
 
 import androidx.appcompat.app.AppCompatActivity;
 

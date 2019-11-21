@@ -6,8 +6,6 @@ import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.s_clothes.data.ActivityCadastroDoador;
-
 public class ActivityPreCadastro extends AppCompatActivity {
 
     @Override

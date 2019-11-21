@@ -11,7 +11,7 @@
         android:theme="@style/AppTheme.NoActionBar">
         <activity android:name=".ActivityMeusDesejos"></activity>
         <activity android:name=".ActivityCadastroAssociacao" />
-        <activity android:name=".data.ActivityCadastroDoador" />
+        <activity android:name=".ActivityCadastroDoador" />
         <activity android:name=".ActivityItem" />
         <activity android:name=".ActivityResultados" />
         <activity android:name=".ActivityChat" />
