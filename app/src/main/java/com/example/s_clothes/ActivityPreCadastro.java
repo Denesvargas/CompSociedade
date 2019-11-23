@@ -18,4 +18,14 @@ public class ActivityPreCadastro extends AppCompatActivity {
         Intent intent = new Intent(this, ActivityCadastro.class);
         startActivity(intent);
     }
+
+    public void abreCadastroDoador(View view){
+        Intent intent = new Intent(this, ActivityCadastroDoador.class);
+        startActivity(intent);
+    }
+
+    public void abreCadastroAssociacao(View view){
+        Intent intent = new Intent(this, ActivityCadastroAssociacao.class);
+        startActivity(intent);
+    }
 }
