@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/logo"
         android:supportsRtl="true"
         android:theme="@style/AppTheme.NoActionBar">
-        <activity android:name=".ActivityMeusDesejos"></activity>
+        <activity android:name=".ActivityAtendaUmDesejo"></activity>
+        <activity android:name=".ActivityMeusDesejos" />
         <activity android:name=".ActivityCadastroAssociacao" />
         <activity android:name=".ActivityCadastroDoador" />
         <activity android:name=".ActivityItem" />
