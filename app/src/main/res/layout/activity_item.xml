@@ -45,19 +45,21 @@
         <TextView
             android:id="@+id/textView_A4"
             style="@style/Widget.AppCompat.TextView.SpinnerItem"
-            android:layout_width="369dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="5dp"
             android:layout_marginRight="20dp"
             android:color="#000000"
             android:fontFamily="sans-serif"
+            android:gravity="center_vertical"
             android:padding="8sp"
             android:text="Categoria: Casaco\nGênero:      Ambos\nTamanho:            G\nCor:               Cinza"
             android:textAlignment="center"
             android:textColor="#000000"
             android:textSize="18sp"
             android:textStyle="bold" />
+
 
         <TextView
             android:id="@+id/textView_A9"
@@ -111,7 +113,7 @@
             android:layout_marginTop="10dp"
             android:layout_marginRight="20dp"
             android:background="?attr/colorPrimary"
-            android:onClick="abreChat"
+            android:onClick="abreAgendar"
             android:text="Agendar retirada em parceiros"
             android:textColor="@android:color/background_light" />
 
