@@ -18,4 +18,6 @@ public class ActivityDonate extends AppCompatActivity {
         Intent intent = new Intent(this, ActivityItem.class);
         startActivity(intent);
     }
+
+
 }

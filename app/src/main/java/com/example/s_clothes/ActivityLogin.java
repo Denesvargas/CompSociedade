@@ -22,6 +22,11 @@ public class ActivityLogin extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void abreMeusDesejos(View view){
+        Intent intent = new Intent(this, ActivityMeusDesejos.class);
+        startActivity(intent);
+    }
+
     public void openHome(View view){
         /*
          * Fazer a autenticação aqui, se falhar retorna um erro
