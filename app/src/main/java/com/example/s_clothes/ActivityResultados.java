@@ -23,4 +23,9 @@ public class ActivityResultados extends AppCompatActivity {
         Intent intent = new Intent(this, ActivityPesquisa.class);
         startActivity(intent);
     }
+
+    public void onClickSearch(View view) {
+        Intent intent = new Intent(this, ActivityResultados.class);
+        startActivity(intent);
+    }
 }

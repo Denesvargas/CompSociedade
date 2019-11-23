@@ -42,8 +42,8 @@ public class HomeDoador extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+            Intent intent = new Intent(view.getContext(), ActivityDonate.class);
+            startActivity(intent);
             }
         });
         drawer = findViewById(R.id.drawer_layout);
@@ -86,6 +86,11 @@ public class HomeDoador extends AppCompatActivity {
 
     public void onClick(View view) {
         Intent intent = new Intent(this, ActivityDonate.class);
+        startActivity(intent);
+    }
+
+    public void onClickSearch(View view) {
+        Intent intent = new Intent(this, ActivityResultados.class);
         startActivity(intent);
     }
 }

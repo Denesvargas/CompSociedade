@@ -19,5 +19,8 @@ public class ActivityDonate extends AppCompatActivity {
         startActivity(intent);
     }
 
-
+    public void onClickSearch(View view) {
+        Intent intent = new Intent(this, ActivityResultados.class);
+        startActivity(intent);
+    }
 }

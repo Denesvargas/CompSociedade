@@ -18,4 +18,9 @@ public class ActivityItem extends AppCompatActivity {
         Intent intent = new Intent(this, ActivityChat.class);
         startActivity(intent);
     }
+
+    public void onClickSearch(View view) {
+        Intent intent = new Intent(this, ActivityResultados.class);
+        startActivity(intent);
+    }
 }

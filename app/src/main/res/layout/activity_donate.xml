@@ -26,21 +26,8 @@
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
             android:background="?attr/colorPrimary"
-            app:popupTheme="@style/AppTheme.PopupOverlay" />
-
-        <TextView
-            android:id="@+id/textView2"
-            style="@style/Widget.AppCompat.TextView.SpinnerItem"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal|top|center_vertical"
-            android:background="#403F3F3F"
-            android:fontFamily="sans-serif"
-            android:padding="8dp"
-            android:text="@string/donate_title"
-            android:textAlignment="center"
-            android:textColor="#000000"
-            android:textSize="24sp" />
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:title="@string/donate_title" />
 
         <ScrollView
             android:layout_width="match_parent"
@@ -72,56 +59,69 @@
                     android:textColor="@android:color/background_light" />
 
 
-                <Spinner
-                    android:id="@+id/spinCategoria"
+                <EditText
+                    android:id="@+id/editText16"
                     android:layout_width="match_parent"
-                    android:layout_height="40dp"
+                    android:layout_height="wrap_content"
                     android:layout_marginLeft="30dp"
-                    android:layout_marginTop="30dp"
+                    android:layout_marginTop="35dp"
                     android:layout_marginRight="30dp"
+                    android:clickable="true"
                     android:ems="10"
-                    android:entries="@array/categoria"
+                    android:gravity="start|top"
+                    android:hint="Categoria"
+                    android:inputType="textMultiLine"
                     android:textColor="#000000"
                     android:textColorHint="#646464" />
 
-                <Spinner
-                    android:id="@+id/spinEstilo"
-                    android:layout_width="match_parent"
-                    android:layout_height="40dp"
-                    android:layout_marginLeft="30dp"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginRight="30dp"
-                    android:ems="10"
-                    android:entries="@array/estilo"
-                    android:textColor="#000000"
-                    android:textColorHint="#646464" />
 
-                <Spinner
-                    android:id="@+id/spinCor"
+                <EditText
+                    android:id="@+id/editText17"
                     android:layout_width="match_parent"
-                    android:layout_height="40dp"
+                    android:layout_height="wrap_content"
                     android:layout_marginLeft="30dp"
                     android:layout_marginTop="10dp"
                     android:layout_marginRight="30dp"
+                    android:clickable="true"
                     android:ems="10"
-                    android:entries="@array/cor"
-                    android:textColor="#000000"
-                    android:textColorHint="#646464" />
-
-                <Spinner
-                    android:id="@+id/spinTamanho"
-                    android:layout_width="match_parent"
-                    android:layout_height="40dp"
-                    android:layout_marginLeft="30dp"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginRight="30dp"
-                    android:ems="10"
-                    android:entries="@array/tamanho"
+                    android:gravity="start|top"
+                    android:hint="Estilo"
+                    android:inputType="textMultiLine"
                     android:textColor="#000000"
                     android:textColorHint="#646464" />
 
                 <EditText
-                    android:id="@+id/editText15"
+                    android:id="@+id/editText18"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="30dp"
+                    android:clickable="true"
+                    android:ems="10"
+                    android:gravity="start|top"
+                    android:hint="Cor"
+                    android:inputType="textMultiLine"
+                    android:textColor="#000000"
+                    android:textColorHint="#646464" />
+
+                <EditText
+                    android:id="@+id/editText19"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="30dp"
+                    android:clickable="true"
+                    android:ems="10"
+                    android:gravity="start|top"
+                    android:hint="Tamanho"
+                    android:inputType="textMultiLine"
+                    android:textColor="#000000"
+                    android:textColorHint="#646464" />
+
+                <EditText
+                    android:id="@+id/editText20"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="30dp"
@@ -153,16 +153,15 @@
 
     </com.google.android.material.appbar.AppBarLayout>
 
-    <SearchView
-        android:id="@+id/searchView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    <ImageView
+        android:id="@+id/imageViewSearch"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
         android:layout_gravity="end"
-        android:layout_margin="4dp"
+        android:layout_margin="10dp"
         android:background="@color/colorPrimary"
-        android:inputType="text"
-        android:layoutDirection="rtl" >
-
-    </SearchView>
+        android:contentDescription="Pesquisar"
+        android:onClick="onClickSearch"
+        app:srcCompat="@drawable/ic_search_black_24dp" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
