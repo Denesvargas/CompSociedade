@@ -5,34 +5,21 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/inicial"
+            android:id="@+id/homeDoador"
             android:icon="@drawable/ic_home_black_24dp"
             android:title="@string/inicial" />
         <item
-            android:id="@+id/nova_doacao"
+            android:id="@+id/activityDonate3"
             android:icon="@drawable/ic_add_black_24dp"
             android:title="Nova Doação" />
+        <item
+            android:id="@+id/activityPesquisa"
+            android:icon="@drawable/ic_search_black_24dp"
+            android:title="Pesquisar" />
+        <item
+            android:id="@+id/activityHelp"
+            android:icon="@drawable/ic_help_black_24dp"
+            android:title="Ajuda" />
     </group>
-
-    <item android:title="Opções">
-        <menu>
-            <item
-                android:id="@+id/nav_config"
-                android:icon="@drawable/ic_settings_black_24dp"
-                android:title="Config" />
-            <item
-                android:id="@+id/nav_help"
-                android:icon="@drawable/ic_help_black_24dp"
-                android:title="Ajuda" />
-            <item
-                android:id="@+id/nav_share"
-                android:icon="@drawable/ic_share_black_24dp"
-                android:title="@string/menu_share" />
-            <item
-                android:id="@+id/nav_exit"
-                android:icon="@drawable/ic_power_settings_new_black_24dp"
-                android:title="@string/menu_exit" />
-        </menu>
-    </item>
 
 </menu>

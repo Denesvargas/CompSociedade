@@ -8,16 +8,10 @@
     android:focusable="true"
     tools:context=".HomeDoador">
 
-    <fragment
-        android:id="@+id/nav_host_fragment"
-        android:name="androidx.navigation.fragment.NavHostFragment"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
-
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/appBarLayout"
         android:layout_width="match_parent"
-        android:layout_height="668dp"
+        android:layout_height="wrap_content"
         android:background="#00FFFFFF"
         android:theme="@style/AppTheme.AppBarOverlay">
 
