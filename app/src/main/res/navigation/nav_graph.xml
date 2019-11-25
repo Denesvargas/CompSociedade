@@ -11,6 +11,16 @@
         android:label="@string/inicial"
         tools:layout="@layout/app_bar_doador" />
     <activity
+        android:id="@+id/activityAswerDesires"
+        android:name="com.example.s_clothes.ActivityAtendaUmDesejo"
+        android:label="Atenda Um Desejo"
+        tools:layout="@layout/activity_atenda_um_desejo" />
+    <activity
+        android:id="@+id/activityMyDesires"
+        android:name="com.example.s_clothes.ActivityMeusDesejos"
+        android:label="Meus Desejos"
+        tools:layout="@layout/activity_meus_desejos" />
+    <activity
         android:id="@+id/activityDonate3"
         android:name="com.example.s_clothes.ActivityDonate"
         android:label="activity_donate"

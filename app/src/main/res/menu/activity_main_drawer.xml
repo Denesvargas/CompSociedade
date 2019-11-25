@@ -9,6 +9,14 @@
             android:icon="@drawable/ic_home_black_24dp"
             android:title="@string/inicial" />
         <item
+            android:id="@+id/activityAswerDesires"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="Atender Desejos" />
+        <item
+            android:id="@+id/activityMyDesires"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="Meus Desejos" />
+        <item
             android:id="@+id/activityDonate3"
             android:icon="@drawable/ic_add_black_24dp"
             android:title="Nova Doação" />

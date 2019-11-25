@@ -20,7 +20,6 @@ import androidx.navigation.ui.NavigationUI;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.navigation.NavigationView;
-import com.google.android.material.snackbar.Snackbar;
 
 public class HomeDoador extends AppCompatActivity {
 
@@ -82,7 +81,12 @@ public class HomeDoador extends AppCompatActivity {
     }
 
     public void onClickSearch(View view) {
-        Intent intent = new Intent(this, ActivityResultados.class);
+        Intent intent = new Intent(this, ActivityPesquisa.class);
+        startActivity(intent);
+    }
+
+    public void onClick(View view) {
+        Intent intent = new Intent(this, ActivityDonate.class);
         startActivity(intent);
     }
 }

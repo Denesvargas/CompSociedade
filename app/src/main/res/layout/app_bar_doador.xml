@@ -13,7 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#00FFFFFF"
-        android:theme="@style/AppTheme.AppBarOverlay">
+        android:theme="@style/AppTheme.AppBarOverlay" />
 
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
@@ -30,7 +30,8 @@
         android:layout_margin="10dp"
         android:background="@color/colorPrimary"
         android:onClick="onClickSearch"
-        app:srcCompat="@drawable/ic_search_black_24dp" />
+        app:srcCompat="@drawable/ic_search_black_24dp"
+        tools:ignore="VectorDrawableCompat" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fab"
