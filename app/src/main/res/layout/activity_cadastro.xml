@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ActivityLogin">
+    tools:context=".ActivityCadastro">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar2"
@@ -148,6 +148,7 @@
             android:layout_marginRight="20dp"
             android:layout_marginBottom="10dp"
             android:background="@android:color/holo_blue_dark"
+            android:onClick="abreHome"
             android:text="CADASTRAR"
             android:textColor="@android:color/background_light"
             android:textSize="14sp" />
