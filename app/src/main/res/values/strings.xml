@@ -18,7 +18,7 @@
     <!-- <string name="search_title" /> -->
     <string name="home_doador">Solicitações de doações</string>
     <string name="login_button">ENTRAR</string>
-    <string name="cadastro_button">CADASTRE-SE</string>
+    <string name="cadastro_button">Cadastre-se</string>
     <string name="hint_user_label">Usuário</string>
     <string name="hint_password_label">Senha</string>
     <!-- Strings related to help screen -->

@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:clickable="true"
     android:focusable="true"
+    android:focusableInTouchMode="true"
     tools:context=".ActivityDonate">
 
     <com.google.android.material.appbar.AppBarLayout
@@ -79,7 +80,7 @@
                     android:clickable="true"
                     android:ems="10"
                     android:gravity="start|top"
-                    android:hint="Estilo"
+                    android:hint="Gênero"
                     android:inputType="textMultiLine"
                     android:textColor="#000000"
                     android:textColorHint="#646464" />

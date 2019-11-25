@@ -5,6 +5,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:clickable="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
     tools:context=".ActivityCadastro">
 
     <androidx.appcompat.widget.Toolbar
@@ -25,17 +28,16 @@
         <EditText
             android:id="@+id/editText2"
             android:layout_width="match_parent"
-            android:layout_height="50dp"
+            android:layout_height="wrap_content"
             android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
             android:layout_marginRight="30dp"
-            android:background="@color/colorAccent"
             android:ems="10"
             android:hint="NIS"
             android:inputType="textPersonName"
-            android:textColor="@android:color/background_light"
-            android:textColorHighlight="@color/colorPrimary"
-            android:textColorHint="@android:color/background_light"
-            android:textSize="24sp" />
+            android:textColor="#000000"
+            android:textColorHint="#646464"
+            android:textSize="18sp" />
 
         <EditText
             android:id="@+id/editText3"

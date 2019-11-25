@@ -4,6 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:clickable="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
     tools:context=".ActivityMeusDesejos">
 
     <androidx.appcompat.widget.Toolbar
@@ -93,7 +96,7 @@
                 android:background="@color/colorGrey"
                 android:ems="10"
                 android:enabled="false"
-                android:hint="Luvas Vermelhas"
+                android:hint="   Luvas Vermelhas"
                 android:inputType="textPersonName"
                 android:textSize="18sp" />
 
@@ -119,7 +122,7 @@
                 android:background="@color/Verde"
                 android:ems="10"
                 android:enabled="false"
-                android:hint="Camiseta Azul M"
+                android:hint="   Camiseta Azul M"
                 android:inputType="textPersonName"
                 android:textSize="18sp" />
 
@@ -145,7 +148,7 @@
                 android:background="@color/colorGrey"
                 android:ems="10"
                 android:enabled="false"
-                android:hint="Calça Jeans 47"
+                android:hint="   Calça Jeans 47"
                 android:inputType="textPersonName"
                 android:textSize="18sp" />
 
@@ -171,7 +174,7 @@
                 android:background="@color/Verde"
                 android:ems="10"
                 android:enabled="false"
-                android:hint="Tênis Barnco 39"
+                android:hint="   Tênis Branco 39"
                 android:inputType="textPersonName"
                 android:textSize="18sp" />
 
