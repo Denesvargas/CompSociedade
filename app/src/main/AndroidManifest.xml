@@ -30,6 +30,7 @@
         <activity android:name=".ActivityPreCadastro" />
         <activity android:name=".ActivityCadastro" />
         <activity android:name=".HomeDoador" />
+        <activity android:name=".ActivityHome" />
     </application>
 
 </manifest>

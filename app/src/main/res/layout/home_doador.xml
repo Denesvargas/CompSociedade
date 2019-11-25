@@ -8,6 +8,14 @@
     android:fitsSystemWindows="true"
     tools:openDrawer="start">
 
+    <fragment
+        android:id="@+id/main_content"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:defaultNavHost="true"
+        app:navGraph="@navigation/nav_graph" />
+
     <include
         layout="@layout/app_bar_doador"
         android:layout_width="match_parent"

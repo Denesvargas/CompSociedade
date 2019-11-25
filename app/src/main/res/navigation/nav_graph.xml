@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_graph"
+    app:startDestination="@id/homeDoador">
+
+    <activity
+        android:id="@+id/homeDoador"
+        android:name="com.example.s_clothes.ActivityHome"
+        android:label="@string/inicial"
+        tools:layout="@layout/app_bar_doador" />
+    <activity
+        android:id="@+id/activityDonate3"
+        android:name="com.example.s_clothes.ActivityDonate"
+        android:label="activity_donate"
+        tools:layout="@layout/activity_donate" />
+    <activity
+        android:id="@+id/activityPesquisa"
+        android:name="com.example.s_clothes.ActivityPesquisa"
+        android:label="activity_pesquisa"
+        tools:layout="@layout/activity_pesquisa" />
+    <activity
+        android:id="@+id/activityHelp"
+        android:name="com.example.s_clothes.ActivityHelp"
+        android:label="activity_help"
+        tools:layout="@layout/activity_help" />
+
+</navigation>
