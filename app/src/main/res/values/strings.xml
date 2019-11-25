@@ -40,7 +40,7 @@
     <string name="donate_option5">Descrição</string>
     <string name="donate_save">Salvar</string>
     <!-- Strings related to search screen -->
-    <string name="search_title">Pesquisa Detalhada</string>
+    <string name="search_title">Pesquisar</string>
     <string name="search_text">Filtros de busca</string>
     <string name="search_option1">Categoria</string>
     <string name="search_option2">Estilo</string>
