@@ -10,11 +10,11 @@
             android:title="@string/inicial" />
         <item
             android:id="@+id/activityAswerDesires"
-            android:icon="@drawable/ic_home_black_24dp"
+            android:icon="@drawable/ic_card_giftcard_black_24dp"
             android:title="Atender Desejos" />
         <item
             android:id="@+id/activityMyDesires"
-            android:icon="@drawable/ic_home_black_24dp"
+            android:icon="@drawable/ic_event_note_black_24dp"
             android:title="Meus Desejos" />
         <item
             android:id="@+id/activityDonate3"
