@@ -15,7 +15,7 @@ public class ActivityDonate extends AppCompatActivity {
     }
 
     public void abreItem(View view){
-        Intent intent = new Intent(this, ActivityItem.class);
+        Intent intent = new Intent(this, HomeDoador.class);
         startActivity(intent);
     }
 
